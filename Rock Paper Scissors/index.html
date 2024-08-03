@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src = './rps.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header" class="head">
+        <div>
+            <button type='button' id="init-game">Initialize Game</button>
+        </div>
+        <div id="score-area">
+            <label for="scorePlayer" class="scoreLabel">Player Score:</label>
+            <input type="text" id="scorePlayer" class="score">
+            <label for="scoreMachine" class="scoreLabel">Opponent Score:</label>
+            <input type = 'text' id="scoreMachine" class="score">
+        </div>
+    </section>
+    <section class= "game-area" id="game">
+        <div class="game-divs" id="playerPlay">
+            <label class="gameLabel" for="playerChoice">Player:</label>
+            <input type="text" class="plays" id="playerChoice">
+        </div>
+        <div class="game-divs" id = 'resultArea'>
+            <label class="gameLabel" for="result">Resultado:</label>
+            <input type="text"  id="result">
+        </div>
+        <div class="game-divs" id="opponentPlay">
+            <label class="gameLabel" for = 'opponentChoice'>Opponent:</label>
+            <input type = 'text' class="plays" id="opponentChoice">
+        </div>
+    </section>
+    <section id="buttons">
+        <p>Select an option to play:</p>
+        <div id = 'playerButtons'>
+            <button type="button" id="rock">Rock</button>
+            <button type="button" id="paper">Paper</button>
+            <button type="button" id="scissors">Scissors</button>
+        </div>
+    </section>
+</body>
+</html>

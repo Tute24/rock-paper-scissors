@@ -1,0 +1,61 @@
+body{
+    background-color: darkgrey;
+}
+#score-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    border-radius: 2rem;
+    border-width: 0.3rem;
+    border-style: solid;
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    margin-right:2rem
+}
+.scoreLabel{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#scoreMachine{
+    border-color: #FF0000;
+}
+#scorePlayer{
+    border-color: #32CD32;
+}
+
+.game-area{
+    display:flex;
+    gap:8rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.gameLabel{
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.plays{
+    height:5rem;
+    border-radius: 1.2rem;
+    border-style: solid;
+    font-family:'Courier New', Courier, monospace;
+    border-color: white;
+    border-width: 0.3rem;
+    color: white;
+    font-size: 1.7rem;
+    max-width: 9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#playerChoice{
+    background-color: #32CD32;
+}
+
+#opponentChoice{
+    background-color: #FF0000;
+}
+
