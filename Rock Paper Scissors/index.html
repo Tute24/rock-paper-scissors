@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src = './rps.js'></script>
+    <script src = './rps.js' defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
             <button type='button' id="init-game">Initialize Game</button>
         </div>
         <div id="score-area">
-            <label for="scorePlayer" class="scoreLabel">Player Score:</label>
+            <label for="scorePlayer" class="scoreLabel" id="label1">Player Score:</label>
             <input type="text" id="scorePlayer" class="score">
             <label for="scoreMachine" class="scoreLabel">Opponent Score:</label>
             <input type = 'text' id="scoreMachine" class="score">
@@ -21,24 +21,24 @@
     </section>
     <section class= "game-area" id="game">
         <div class="game-divs" id="playerPlay">
-            <label class="gameLabel" for="playerChoice">Player:</label>
+            <label class="gameLabel" for="playerChoice">Player</label>
             <input type="text" class="plays" id="playerChoice">
         </div>
         <div class="game-divs" id = 'resultArea'>
-            <label class="gameLabel" for="result">Resultado:</label>
+           
             <input type="text"  id="result">
         </div>
         <div class="game-divs" id="opponentPlay">
-            <label class="gameLabel" for = 'opponentChoice'>Opponent:</label>
+            <label class="gameLabel" for = 'opponentChoice'>Opponent</label>
             <input type = 'text' class="plays" id="opponentChoice">
         </div>
     </section>
     <section id="buttons">
         <p>Select an option to play:</p>
         <div id = 'playerButtons'>
-            <button type="button" id="rock">Rock</button>
-            <button type="button" id="paper">Paper</button>
-            <button type="button" id="scissors">Scissors</button>
+            <button class= "gameBtns" type="button" id="ROCK">ROCK</button>
+            <button class= "gameBtns" type="button" id="PAPER">PAPER</button>
+            <button class= "gameBtns" type="button" id="SCISSORS">SCISSORS</button>
         </div>
     </section>
 </body>

@@ -1,5 +1,6 @@
 body{
     background-color: darkgrey;
+    
 }
 #score-area{
     display: flex;
@@ -13,11 +14,22 @@ body{
     width: 2.5rem;
     height: 1.5rem;
     margin-left: 1rem;
-    margin-right:2rem
+    margin-right:2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
 }
 .scoreLabel{
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
+}
+
+.gameLabel{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
 }
 #scoreMachine{
     border-color: #FF0000;
@@ -34,7 +46,7 @@ body{
 }
 .gameLabel{
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .plays{
@@ -59,3 +71,63 @@ body{
     background-color: #FF0000;
 }
 
+#result{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-radius: 1.2rem;
+    color: white;
+    height: 2rem;
+    width: 19rem;
+    text-align: center;
+    margin-top:3.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+p{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+#playerButtons{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.gameBtns{
+    background-color:#1E90FF;
+    
+    border-radius: 2rem ;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    height:3.5rem;
+    width:9.5rem;
+    text-align: center;
+    border-style:ridge;
+    border-color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+#init-game{
+    cursor: pointer;
+    border-radius: 2rem;
+    border-style: solid;
+    height: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight:bold;
+    background-color: beige;
+
+}
